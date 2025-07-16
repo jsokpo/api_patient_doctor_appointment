@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log(err));
 
 // Sample route
-app.get('/', (req, res) => {
+app.get('/api/v1', (req, res) => {
     res.send('Backend is running');
 });
 
