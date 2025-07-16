@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI, {
   .catch(err => console.log(err));
 
 // Sample route
-app.get('https://healthsystemapi.onrender.com/api', (req, res) => {
+app.get('/', (req, res) => {
     res.send('Backend is running');
 });
 
